@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@700&display=swap");
+
+@font-face {
+  font-family: "Soulty";
+  src: url("./soulty.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+$black: #303030;
+$white: #fcfaff;
+$aquamarine: #40b5ad;
+
+body {
+  background-color: $white;
+}
+
+.heading {
+  margin: 0 auto;
+  max-width: 1000px;
+  height: 200px;
+  margin-top: 15em;
+  h1 {
+    font-size: 70px;
+    opacity: 0;
+    transform: translateY(50%);
+    animation: anim 0.5s ease-in-out forwards;
+    color: $black;
+  }
+  h2 {
+    font-size: 70px;
+    opacity: 0;
+    transform: translateY(50%);
+    animation: anim 0.5s ease-in-out forwards;
+    animation-delay: 1s;
+    font-family: "Sono", sans-serif;
+    color: $aquamarine;
+  }
+}
+
+@keyframes anim {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
