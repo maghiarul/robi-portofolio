@@ -6,11 +6,16 @@
   src: url("./soulty.ttf");
 }
 
+@font-face {
+  font-family: "Cera";
+  src: url("./cera.woff");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Cera", sans-serif;
 }
 
 $black: #303030;
@@ -21,13 +26,18 @@ body {
   background-color: $white;
 }
 
+#one{
+  height: 75vh;
+}
+
 .heading {
   margin: 0 auto;
   max-width: 1000px;
   height: 200px;
   margin-top: 15em;
+  overflow-y: hidden !important;
   h1 {
-    font-size: 70px;
+    font-size: 60px;
     opacity: 0;
     transform: translateY(50%);
     animation: anim 0.5s ease-in-out forwards;
@@ -39,8 +49,21 @@ body {
     transform: translateY(50%);
     animation: anim 0.5s ease-in-out forwards;
     animation-delay: 1s;
-    font-family: "Sono", sans-serif;
+    animation-fill-mode: both;
     color: $aquamarine;
+  }
+}
+
+.arrow {
+  text-align: center;
+  margin-top: 10em;
+  #arrow-down {
+    font-size: 48px;
+    opacity: 0;
+    transform: translateY(50%);
+    animation: anim 0.5s ease-in-out forwards;
+    animation-delay: 2s;
+    animation-fill-mode: both;
   }
 }
 
@@ -52,5 +75,29 @@ body {
   to {
     opacity: 1;
     transform: translateY(0%);
+  }
+}
+
+$navy: #0a192f;
+$slate: #a8b2d1;
+
+#two{
+  height: 100vh;
+  background-color: $navy;
+}
+
+.about-me{
+  margin: 0 auto;
+  padding-top: 10em;
+  max-width: 1000px;
+  h1{
+    font-size: 50px;
+    color: $slate;
+  }
+  p{
+    font-size: 18px;
+    color: $white;
+    margin-top: 4em;
+    margin-bottom: 2em;
   }
 }
