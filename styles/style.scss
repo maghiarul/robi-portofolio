@@ -15,7 +15,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Cera", sans-serif;
 }
 
 $black: #303030;
@@ -26,8 +25,13 @@ body {
   background-color: $white;
 }
 
-#one{
+html {
+  scroll-behavior: smooth;
+}
+
+#one {
   height: 75vh;
+  font-family: "Cera", sans-serif;
 }
 
 .heading {
@@ -81,23 +85,73 @@ body {
 $navy: #0a192f;
 $slate: #a8b2d1;
 
-#two{
+#two {
   height: 100vh;
   background-color: $navy;
+  font-family: "Cera", sans-serif;
 }
 
-.about-me{
+.about-me {
   margin: 0 auto;
-  padding-top: 10em;
+  padding-top: 7em;
   max-width: 1000px;
-  h1{
+  h1 {
     font-size: 50px;
     color: $slate;
   }
-  p{
+  p {
     font-size: 18px;
     color: $white;
     margin-top: 4em;
     margin-bottom: 2em;
+  }
+  .text {
+    display: flex;
+    flex-direction: row;
+  }
+  .more-text {
+    margin: 20px;
+  }
+  .skills {
+    font-family: "Work Sans", sans-serif !important;
+    h2 {
+      color: #ff5f1f;
+      white-space: nowrap;
+      margin: 10px;
+    }
+    h1{
+      font-family: "Cera";
+
+    }
+  }
+}
+
+.nice {
+  color: $aquamarine;
+  font-size: 40px;
+}
+
+.smt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .border {
+    height: 20px;
+    width: 100%;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: $white;
+    .progress-blender {
+      height: 20px;
+      width: 35%;
+      border-radius: 20px;
+      background-color: #ff5f1f;
+    }
+    .progress-fusion {
+      height: 20px;
+      width: 80%;
+      border-radius: 20px;
+      background-color: #ff5f1f;
+    }
   }
 }
